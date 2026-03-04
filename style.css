@@ -1,0 +1,1080 @@
+/* 1. Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    background-color: #2c3e50; /* Slightly darker than the main nav */
+    color:   #bdc3c7;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle light line */
+}
+
+.top-info span {
+    font-weight: 500;
+}
+
+.top-socials a {
+    color: #bdc3c7;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: color 0.3s;
+}
+
+.top-socials a:hover {
+    color: #ffffff;
+}
+
+/* Ensure the main navbar still sticks properly below the top bar */
+.navbar {
+    background-color: #2c3e50;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0; /* This stays 0 so it stays at the very top when you scroll */
+    z-index: 1000;
+}
+
+/* 2. Navigation bar */
+/* Navigation Container */
+.navbar {
+    background-color: #2c3e50;
+    height: 80px;
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links apart */
+    align-items: center;            /* Centers items vertically */
+    padding: 0 50px;
+    position: sticky;               /* Keeps bar at top when scrolling */
+    top: 0;
+    z-index: 1000;                  /* Ensures it stays above other content */
+}
+
+/* Update the Navbar for a white background and larger logo */
+.navbar {
+    background-color: #ffffff;    /* Set background to white */
+    min-height: 120px;            /* Increased height to fit larger logo */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Adds a subtle shadow for depth */
+    
+    /* This adds the line between the Top Bar and Nav Bar */
+    border-top: 1px solid #eee;   
+}
+
+/* Increase the logo size */
+.logo img {
+    height: 100px;                /* Adjusted height */
+    width: auto;                  /* Maintains aspect ratio */
+    display: block;
+}
+
+/* Ensure Nav Links remain readable on a white background */
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;               /* Dark blue/grey text for contrast */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e67e22;               /* Brand orange on hover */
+}
+
+/* Optional: Slight pop effect on hover */
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Links List */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #1f1d1d;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+/* The "Call to Action" Button */
+.nav-cta {
+    background-color: #e67e22;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s !important;
+}
+
+.nav-cta:hover {
+    background-color: #d35400;
+    color: #fff !important;
+}
+
+/* Hero Section Container */
+.hero {
+    background-color: #f8f9fa; /* Light neutral background */
+    height: 80vh;               /* Sets height to 80% of the screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    color: #5a6268;
+    margin-bottom: 30px;
+}
+
+/* Styling for the text above the headline */
+.hero-subtitle {
+    display: block;             /* Ensures it sits on its own line */
+    font-size: 1.5rem;          /* Smaller than the main headline */
+    font-weight: 700;           /* Bold to stand out */
+    text-transform: uppercase;  /* Makes it feel like a label */
+    letter-spacing: 2px;        /* Adds professional breathing room */
+    color: #007bff;             /* Matches your primary button color */
+    margin-bottom: 10px;        /* Space between this and the H1 */
+}
+
+/* Adjusting the H1 margin slightly for better flow */
+.hero h1 {
+    font-size: 3.5rem;
+    color: #2c3e50;
+    margin-top: 0;             /* Removes extra space at the top */
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+
+/* 4. Grid and Cards */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* 5. Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Hero Section Container (UPDATED) */
+.hero {
+    /* Layer 1: A subtle dark overlay gradient (rgba(0,0,0,0.5) is 50% black) */
+    /* Layer 2: The actual background image */
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('hero-bg.jpg');
+
+    /* Key properties for full-screen background images */
+    background-size: cover;          /* The image always covers the entire section */
+    background-position: center;      /* Keeps the image centered as the screen resizes */
+    background-attachment: fixed;     /* This creates a subtle parallax scrolling effect */
+    background-repeat: no-repeat;     /* Ensures the image doesn't tile */
+    
+    height: 80vh;                    /* Keeps the section high */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+/* Updated Typographic Colors for dark background */
+.hero-subtitle {
+    display: block;
+    font-size: 1rem;          /* Sligthly larger for readability */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffd166;            /* A complementary bright accent color (gold/yellow) */
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #ffffff;            /* Pure white text for maximum contrast */
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* subtle shadow for pop */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #f4f4f4;            /* Soft off-white for the body text */
+    margin-bottom: 40px;
+}
+
+/* Updated Button Styling */
+.hero-btns a {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #ffd166; /* Matching the subtitle accent color */
+    color: #2c3e50;           /* Dark text on bright button */
+}
+
+.btn-primary:hover {
+    background-color: #ffc233;
+}
+
+.btn-secondary {
+    border: 2px solid #ffffff; /* White border */
+    color: #ffffff;            /* White text */
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    color: #2c3e50;
+}
+
+/* Section Padding */
+.about-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+/* The Grid Container */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column forces stacking */
+    gap: 30px;                  /* Space between image and text */
+    max-width: 800px;           /* Narrower width keeps text readable */
+    margin: 0 auto;             /* Centers the entire section */
+    text-align: center;         /* Centers the text and button */
+}
+
+.about-image img {
+    width: 100%;
+    max-height: 500px;         /* Prevents the image from being too tall */
+    object-fit: cover;         /* Crops image cleanly to fit the box */
+    border-radius: 10px;
+}
+
+.about-features {
+    display: inline-block;     /* Keeps the list centered */
+    text-align: left;          /* But keeps the bullet points aligned */
+    margin: 20px 0;
+}
+
+/* Text Styling */
+.section-subtitle {
+    color: #007bff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+
+.about-text h3{
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-text p {
+    font-size: 0.5rem;
+    color: #5a6268;
+    margin-bottom: 20px;
+}
+
+/* Styling the About Features List */
+.about-features {
+    list-style: none;         /* Removes default bullets */
+    padding: 0;
+    margin: 25px 0;           /* Adds space above and below the list */
+}
+
+.about-features li {
+    font-size: 1.1rem;
+    color: #5a6268;
+    margin-bottom: 12px;      /* Spacing between items */
+    display: flex;
+    align-items: center;      /* Keeps icon and text aligned */
+}
+
+.about-features i {
+    color: #007bff;           /* Makes the checkmark your primary color */
+    margin-right: 15px;       /* Space between icon and text */
+    font-size: 1rem;
+}
+
+/* Ensure the text still flows well */
+.about-text p {
+    font-size: 1.1rem;
+    color: #5a6268;
+    line-height: 1.6;
+}
+
+/* Services Section Layout */
+.services-section {
+    padding: 100px 20px;
+    background-color: #f8f9fa; /* Light grey to contrast with white About section */
+    text-align: center;
+}
+
+.section-header {
+    margin-bottom: 60px;
+}
+
+.header-line {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 20px auto;
+}
+
+/* The Grid */
+.services-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Individual Service Cards */
+.service-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+/* Icon Styling */
+.service-icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Hover Effect */
+.service-card:hover {
+    transform: translateY(-10px); /* Lifts the card up */
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Specific Icon Colors */
+.fa-fire-flame-curved {
+    color: #e67e22; /* Warm Orange/Red */
+}
+
+.fa-snowflake {
+    color: #3498db; /* Cool Blue */
+}
+
+/* Update the color for the tool icon */
+.fa-screwdriver-wrench {
+    color: #d35400; /* Deep Emergency Orange */
+}
+
+/* Optional: Add a slight rotation effect on hover to make it feel "active" */
+.service-card:hover .fa-screwdriver-wrench {
+    transform: rotate(-15px);
+    transition: transform 0.3s ease;
+}
+
+/* Ensure the hover effect still looks good */
+.service-card:hover .service-icon i {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Financing Section Layout */
+.financing-cta {
+    background-color: #2c3e50; /* Matches your nav for brand consistency */
+    color: #ffffff;
+    padding: 80px 20px;
+}
+
+.financing-flex {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.financing-content {
+    flex: 2; /* Takes up more space for the explanation */
+}
+
+.financing-content h2 {
+    font-size: 2.2rem;
+    margin: 10px 0 20px;
+    color: #ffffff;
+}
+
+.financing-content p {
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    line-height: 1.6;
+}
+
+.financing-action {
+    flex: 1; /* Takes up less space for the button */
+    text-align: center;
+}
+
+/* Button & Icon Adjustments */
+.financing-action .btn-primary {
+    display: inline-block;
+    padding: 18px 30px;
+    font-size: 1.1rem;
+    background-color: #ffd166; /* Using that bright accent color from earlier */
+    color: #2c3e50;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.financing-action .btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.financing-action i {
+    margin-left: 10px;
+    font-size: 0.9rem;
+}
+
+.financing-note {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.85rem;
+    color: #bdc3c7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .financing-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.reviews-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.reviews-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* FIX: Increased min-height to accommodate longer text without overlapping */
+.reviews-slider {
+    max-width: 850px; /* Wider for better text flow */
+    margin: 0 auto;
+    position: relative;
+    min-height: 320px; /* Adjust this if text still feels tight */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-card {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.6s ease-in-out;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.review-card.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Typographic Fixes */
+.review-content p {
+    font-size: 1.2rem; /* Slightly smaller to handle more text */
+    line-height: 1.8;   /* Increased spacing between lines */
+    color: #4a4a4a;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.stars {
+    color: #f1c40f;
+    font-size: 1.1rem;
+}
+
+.client-name {
+    font-weight: 700;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Button Positioning */
+.google-link-wrapper {
+    margin-top: 50px;
+}
+
+.google-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border: 1px solid #344b7a;
+    border-radius: 25px; /* Rounded pill shape looks more modern */
+    color: #3c4043;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.google-btn:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* The wrapper for the Google button */
+.google-link-wrapper {
+    margin-top: 40px; 
+    clear: both; /* Ensures it stays below floated or absolute elements */
+}
+
+/* Outline Button */
+.btn-outline {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #2c3e50;
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.btn-outline:hover {
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+        text-align: center;
+    }
+}
+
+/* Center the Header inside the Contact Card */
+.contact-card .section-header {
+    text-align: center;      /* Centers the title and subtitle */
+    margin-bottom: 40px;     /* Adds space between header and form */
+}
+
+.contact-card .section-subtitle {
+    display: block;          /* Ensures it sits on its own line */
+    margin-bottom: 5px;
+}
+
+.contact-card h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin: 0 auto 15px;    /* Centers the H1 and adds bottom margin */
+}
+
+/* Center the blue decorative line */
+.contact-card .header-line {
+    width: 60px;
+    height: 3px;
+    background-color: #007bff;
+    margin: 0 auto;         /* The magic trick: '0 auto' centers block elements */
+}
+
+/* NEW: Layout Row for side-by-side inputs */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    flex: 1; /* Makes fields in a row equal width */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    font-size: 0.85rem;
+}
+
+/* Combined Input Styling */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: #fcfcfc;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.1);
+}
+
+/* Address Field Specifics */
+.contact-form input[name="address"] {
+    background-color: #f0f7ff;
+    border: 2px solid #2c3e50;
+}
+
+/* Textarea Specifics */
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+/* Submit Button - Matched to Navigation Theme (#2c3e50) */
+.full-width {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+    /* Background and Border match the requested color */
+    background-color: #2c3e50; 
+    border: 2px solid #2c3e50;
+    color: #ffffff;           /* White text for high contrast */
+    
+    border-radius: 5px;        
+    text-transform: uppercase; 
+    letter-spacing: 1px;       
+    transition: all 0.3s ease;
+    box-sizing: border-box;    /* Ensures border doesn't add width */
+}
+
+/* Hover effect: Lightens slightly and adds a shadow */
+.full-width:hover {
+    background-color: #34495e; /* A slightly lighter shade of the same blue */
+    border-color: #34495e;
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
+    transform: translateY(-2px);
+}
+
+.full-width:active {
+    transform: translateY(0);
+}
+
+/* Responsive Fix: Stack fields on mobile */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Footer Social Icons */
+/* Footer Link Color Fix */
+.footer-info p a {
+    color: #ffffff;         /* Makes the text white */
+    text-decoration: none;  /* Removes the underline */
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Optional: Slight color change when someone hovers over them */
+.footer-info p a:hover {
+    color: #bdc3c7;         /* Changes to a soft grey on hover */
+    text-decoration: underline;
+}
+
+/* Ensure the social icons don't turn blue either */
+/* Footer Social Icons - Increased Spacing */
+.footer-socials {
+    margin-top: 30px;      /* Adds more space above the icons */
+    display: flex;
+    justify-content: center;
+    gap: 40px;             /* Increased from 20px to 40px for more air */
+}
+
+.footer-socials a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); 
+    width: 50px;           /* Slightly larger touch target */
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.3rem;     /* Slightly larger icon for better visibility */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Added a "pop" effect */
+    display: inline-block;
+}
+
+.footer-socials a:hover {
+    background-color: #007bff; 
+    transform: scale(1.1) translateY(-5px); /* Grows and lifts on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Specific color for Facebook on hover if you prefer */
+.footer-socials a:first-child:hover {
+    background-color: #1877f2;
+}
+
+/* Ensure the Angi 'A' looks clean */
+.footer-socials .fa-a {
+    font-weight: 900;
+}
+
+
+.page-hero {
+    position: relative; /* Necessary for the overlay to sit on top */
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    
+    /* BACKGROUND IMAGE SETTINGS */
+    background-image: url('hero-bg.jpg'); /* Replace with your image filename */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: adds a cool scrolling effect */
+}
+
+/* The dark overlay to make text readable */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the 0.6 to make it darker or lighter */
+    z-index: 1;
+}
+
+/* Ensures the text stays above the overlay */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Mobile Adjustment */
+@media (max-width: 768px) {
+    .page-hero h1 {
+        font-size: 2.2rem;
+    }
+    .page-hero {
+        background-attachment: scroll; /* Fixed background doesn't work well on mobile */
+    }
+}
+
+/* Ensure the card doesn't look like a standard blue link */
+.service-card {
+    text-decoration: none;
+    display: block; /* Makes the whole card a clickable block */
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.service-link {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2c3e50; /* Match your brand blue/black */
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-card:hover .service-link {
+    color: #e67e22; /* Changes the arrow/text to orange on hover */
+}
+
+/* Brand Grid Styling */
+.brands-section {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 60px 40px;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.brands-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.brands-grid span {
+    background: #ffffff;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #2c3e50;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+/* Ensure the page glides smoothly */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Offset for the sticky header */
+.service-detail-item {
+    scroll-margin-top: 100px; /* Adjust this to match your header height */
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.service-detail-item:last-of-type {
+    border-bottom: none;
+}
+
+/* Ensure the text doesn't hit the edges of the screen on mobile */
+.services-detail .container {
+    max-width: 900px;
+}
+
+/* Add breathing room between the sections */
+.service-detail-item {
+    padding: 80px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.service-detail-item:last-child {
+    border-bottom: none;
+}
+
+/* Modern typography for long-form reading */
+.detail-text p {
+    texh-align:center;
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.0rem;
+    margin-top: 20px;
+}
+
+/* Brands Section Styling */
+.brands-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+}
+
+.brands-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.brand-blurb {
+    margin-bottom: 40px;
+    line-height: 1.8;
+    color: #444;
+    font-size: 1.1rem;
+    text-align: center; /* Centers the blurb text */
+}
+
+.brands-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    /* Three columns on desktop */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px 40px;
+}
+
+.brands-list li {
+    font-size: 1.05rem;
+    color: #2c3e50;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 0;
+}
+
+.brands-list li i {
+    color: #e67e22; /* Matches your brand orange */
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .brands-list {
+        grid-template-columns: 1fr 1fr; /* Two columns on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .brands-list {
+        grid-template-columns: 1fr; /* Single column on phones */
+    }
+    .brand-blurb {
+        text-align: left;
+    }
+}
+
+/* Final Call to Action Styles */
+.final-cta {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Subtle light grey background */
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.final-cta h2 {
+    font-size: 2.5rem;
+    color: #2c3e50; /* Primary Navy */
+    margin-bottom: 15px;
+}
+
+.final-cta p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Enhancing the button for the CTA */
+.final-cta .btn-primary {
+    display: inline-block;
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
