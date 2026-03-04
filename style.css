@@ -798,7 +798,7 @@ footer {
 /* Ensure the social icons don't turn blue either */
 /* Footer Social Icons - Increased Spacing */
 .footer-socials {
-    margin-top: 30px;      /* Adds more space above the icons */
+    margin-top: 15px 0px;      /* Adds more space above the icons */
     display: flex;
     justify-content: center;
     gap: 40px;             /* Increased from 20px to 40px for more air */
@@ -812,7 +812,7 @@ footer {
     line-height: 50px;
     border-radius: 50%;
     text-align: center;
-    font-size: 1.3rem;     /* Slightly larger icon for better visibility */
+    font-size: 1.2rem;     /* Slightly larger icon for better visibility */
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Added a "pop" effect */
     display: inline-block;
 }
