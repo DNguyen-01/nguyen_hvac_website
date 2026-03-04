@@ -414,6 +414,15 @@ footer {
     line-height: 1.2;
 }
 
+.about-text h1 {
+    color: #007bff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
 .about-text p {
     font-size: 0.5rem;
     color: #5a6268;
@@ -457,6 +466,15 @@ footer {
 
 .section-header {
     margin-bottom: 60px;
+}
+
+.section-header h2 {
+    color: #007bff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 .header-line {
