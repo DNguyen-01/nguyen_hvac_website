@@ -9,3 +9,12 @@ function showNextReview() {
 
 // Rotate every 5 seconds
 setInterval(showNextReview, 5000);
+
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    hamburger.classList.toggle('toggle');
+});
