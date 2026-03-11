@@ -1204,7 +1204,7 @@ html {
 
 /* Modern typography for long-form reading */
 .detail-text p {
-    texh-align:center;
+    text-align:center;
     line-height: 1.8;
     color: #444;
     font-size: 1.0rem;
@@ -1216,7 +1216,7 @@ html {
     padding: 60px 20px;
     background-color: #ffffff;
     border-top: 1px solid #eee;
-}
+}.
 
 .brands-content {
     max-width: 900px;
