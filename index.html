@@ -197,6 +197,21 @@
         </div>
     </section>
 
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- images will be injected by script.js -->
+            </div>
+            <div class="gallery-button-wrapper">
+                <button id="viewMoreBtn" class="btn-primary">View More</button>
+            </div>
+        </div>
+    </section>
+
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-card">
@@ -264,6 +279,14 @@
             </div>
         </div>
     </footer>
+
+    <!-- Image Modal for Gallery -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
