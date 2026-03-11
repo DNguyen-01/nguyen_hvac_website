@@ -34,6 +34,7 @@ const galleryFiles = [
     'img_17.jpeg',
     'img_12.jpeg',
     'img_14.jpeg',
+    'img_15.jpeg',
     // add more filenames here as needed
 ];
 
